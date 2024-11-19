@@ -1,0 +1,325 @@
+* {margin: 0; padding: 0;}
+a {text-decoration:none; color:black;}
+ul{list-style:none;padding-left:0px;}
+body {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;}
+input {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;}
+button{border:0; background-color:transparent;}
+button:hover {cursor:pointer;}
+
+#wrap {
+    min-width: 1340px;
+}
+
+#header {
+    background-color: rgba(255, 255, 0, 0.236);
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#container {
+    background-color: white;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #f5f6f7;
+    margin: 0 auto;
+    border-top: 1px solid #ebebeb;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#footer .footer_inner {
+    width: 1280px;
+    margin:0 auto;
+    padding: 30px 8px 80px 8px;
+}
+
+/* 메뉴바 */
+.menu_area div {
+    display: inline-block;
+}
+.menu_left, .menu_right {
+    margin-top: 8px;
+}
+.menu_right {
+    float: right;
+}
+/* 메뉴바의 메뉴버튼들 */
+#header .header_inner .menu_area .menu, .pay, .talk, .alarm, .cart {
+    position: relative;
+    padding: 8px;
+}
+/* 메뉴버튼 */ 
+#header .header_inner .menu_area .menu .btn_menu::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-position: -311px -167.5px;
+    background-size: 463px 440px; 
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block; 
+    content: ''; 
+}
+/* 페이버튼 */
+#header .header_inner .menu_area .pay .btn_pay::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-position: -247.5px -260px;
+    background-size: 463px 440px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 톡버튼 */
+#header .header_inner .menu_area .talk .btn_talk::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-position: -101.5px -318.5px; 
+    background-size: 463px 440px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 알람버튼 */
+#header .header_inner .menu_area .alarm .btn_alarm::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-position: -315.5px -235px; 
+    background-size: 463px 440px; 
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 카트버튼 */
+#header .header_inner .menu_area .cart .btn_cart::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-position: -36px -318.5px;
+    background-size: 463px 440px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 검색상자 */
+#header .header_inner .search_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+}
+/* 검색상자 커서 올렸을 때 그림자효과 */
+#header .header_inner .search_wrap:hover {
+    box-shadow: 0 3px 5px rgba(20, 20, 20, 0.094); /* 그림자 설정 */
+}
+
+.search_wrap .search {
+    display: flex; /* input 크기 딱 맞춰주기 위해 설정 */
+    align-items: center; /* 자식요소 정렬 */
+    height: 58px; /* 부모요소 높이 설정 */
+}
+
+/* 네이버 로고 (첫번째) */
+.search_wrap .search .naver_logo_hat {
+    position: absolute;
+    opacity: 1; /* 초기 상태에서 보이도록 설정 */
+    transition: opacity .5s ease-in-out; /* 페이드아웃 효과 */
+}
+
+.search_wrap .search .naver_logo_hat img {
+    padding: 5px 0 0 10px;
+}
+
+/* 네이버 로고 (두번째) */
+.search_wrap .search .naver_logo {
+    font-family: "Arial Black", sans-serif;
+    position: relative;
+    padding: 8px 16px 8px 27px;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 34px;
+    color: #03c75a;
+    opacity: 0; /* 초기 상태에서 숨김 */
+    transition: opacity .5s ease-in-out; /* 페이드인 효과 */
+}
+
+/* 검색란 placeholder 색상설정 */
+.search_wrap .search .search_input::placeholder {
+    font-weight: 500;
+    color:rgb(202, 202, 189);
+    opacity: 0; 
+}
+/* 검색 input */
+.search_wrap .search .search_input {
+    width: 70%;
+    height: 58px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 600;
+    outline: 0;
+}
+/* 포커스 시 placeholder 출력 */
+.search_wrap .search .search_input:focus::placeholder {
+    opacity: 1; 
+}
+.search_wrap .search .search_menu {
+    margin-left: 24px;
+    display: flex;              /* Flexbox 활성화 */
+    flex-direction: row;        /* 세로 정렬 */
+    align-items: center;        /* 버튼 중앙 정렬 */
+    gap: 5px;                   /* 버튼 간 간격 */
+}
+
+.search_wrap .search .search_menu div {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/* 검색바 키보드 */
+.search_wrap .search .search_menu .search_keyboard .btn_keyboard::before {
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-size: 463px 440px;
+    background-position: -123px -301px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 14px;
+    display: inline-block; 
+    content: ''; 
+}
+/* 검색바 화살표 버튼 */
+.search_wrap .search .search_menu .search_arrow .btn_arrow::before {
+    content: "";
+    display: block;
+    background-image: url('images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -221px -184px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 8px;
+}
+/* 검색버튼 */
+.search_wrap .search .search_menu .search_icon .btn_search::before{
+    background-image: url('images/sp_main.b27083b1.png'); 
+    background-size: 463px 440px; 
+    background-position: -406px -78px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block; 
+    content: '';
+} 
+
+/* shortcut_area */
+#header .header_inner .shortcut_area {
+    position: relative;
+    width: 650px;
+    margin: 68px auto 0;
+}
+/* shortcut_item 동일한 간격으로 정렬 */
+.shortcut_area .shortcut_list {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0; 
+}
+/* 숏컷아이템 inline 속성 부여 */
+.shortcut_area .shortcut_list .shortcut_item {
+    display: inline-block;
+}
+
+.footer_inner a:hover {
+    border-bottom: 1.5px solid black;
+}
+
+/* footer 배너 */
+.footer_inner .banner_area {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #ebebeb;
+}
+
+.footer_inner .banner_area .footer_banner {
+    width: 410px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.footer_inner .notice_area, .aside_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.footer_inner .notice_area div {
+    display: inline-block;
+}
+
+.footer_inner .notice_area .footer_notice_right {
+    float: right;
+}
+
+.aside_area .footer_aside_left, .aside_area .footer_aside_right {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.aside_area .footer_aside_left span {
+    display: inline-block;
+    width: 100px;
+}
+/* a태그 색상 및 크기 */
+.aside_area .footer_aside_left a {
+    color: rgba(0, 0, 0, 0.705);
+}
+.footer_inner .aside_area .footer_aside_left a {
+    position: relative; /* 구분자 위치 설정 */
+    margin-right: 10px;
+}
+/* a태그 사이에 구분자 추가 */
+.footer_inner .aside_area .footer_aside_left a:not(:last-child)::after {
+    content: '|';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0 8px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px; /* 구분자가 a 태그 외부에 위치하도록 설정 */
+    top: 50%;
+    transform: translateY(-50%); /* 수평 중앙 맞추기 */
+}
+.aside_area .footer_aside_left div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.aside_area .footer_aside_right {
+    display: inline;
+    float: right;
+}
+
+.aside_area .footer_aside_right a {
+    display: block;
+    width: fit-content;
+    padding-top: 8px;
+    font-size: 13px;
+}
+
+.aside_area .footer_aside_right .service, .aside_area .footer_aside_right .service_image, .aside_area .footer_aside_right .service_content{
+    display: inline-block;
+}
+
+.aside_area .footer_aside_right .service {
+    margin-right: 25px;
+}
