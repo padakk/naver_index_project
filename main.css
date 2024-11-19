@@ -19,14 +19,19 @@ button:hover {cursor:pointer;}
 #container {
     background-color: white;
     width: 1280px;
-    margin: 0 auto;
+    margin: 5px auto 5px auto;
+    display: flex; /* flexbox 활성화 */
+    flex-direction: row; /* 가로 방향으로 정렬 */
+    justify-content: space-between; /* 왼쪽, 오른쪽 영역의 간격을 자동으로 조정 */
+    flex-wrap: wrap; /* 내용이 넘치면 다음 줄로 넘어가도록 설정 */
 }
 
 #footer {
     background-color: #f5f6f7;
     margin: 0 auto;
     border-top: 1px solid #ebebeb;
-    position: fixed;
+    position: relative;
+    margin-top: 55px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -52,7 +57,7 @@ button:hover {cursor:pointer;}
 /* 메뉴바의 메뉴버튼들 */
 #header .header_inner .menu_area .menu, .pay, .talk, .alarm, .cart {
     position: relative;
-    padding: 8px;
+    padding: 4px;
 }
 /* 메뉴버튼 */ 
 #header .header_inner .menu_area .menu .btn_menu::before {
@@ -237,6 +242,121 @@ button:hover {cursor:pointer;}
     display: inline-block;
 }
 
+
+
+
+
+/* 컨테이너 박스들 테두리 */
+#container .container_inner .container_contents {
+    border-radius: 8px;
+    border: 1.2px solid #bebebe4e;
+}
+
+#container .container_inner .container_left {
+    display: inline-block;
+    width: 830px;
+}
+
+#container .container_inner .container_left #left_main_ad {
+    height: 130px;
+    background-color: #03c75b4b;
+}
+
+#container .container_inner .container_left #news {
+    margin-top: 16px;
+    height: 425.6px;
+    background-color: rgba(160, 175, 237, 0.183);
+}
+
+#container .container_inner .container_left #container_shopping {
+    margin-top: 16px;
+    height: 559.6px;
+    background-color: rgba(160, 230, 237, 0.183);
+}
+
+#container .container_inner .container_left #feed {
+    margin-top: 16px;
+    height: 1143.3px;
+    background-color: rgba(237, 160, 184, 0.183);
+}
+
+#container .container_inner .container_left #left_sub_ad {
+    margin-top: 16px;
+    height: 60px;
+    background-color: rgba(160, 230, 237, 0.183);
+}
+
+
+
+
+#container .container_inner .container_right {
+    width: 420px;
+    margin-left: 30px;
+    float: right;
+}
+
+#container .container_inner .container_right #naver_account {
+    height: 163.3px;
+    background-color: rgba(125, 107, 133, 0.211);
+}
+
+#container .container_inner .container_right #right_main_ad {
+    margin-top: 16px;
+    height: 244px;
+    background-color: #03c75b4b;
+}
+
+#container .container_inner .container_right #right_sub_ad {
+    margin-top: 16px;
+    height: 80px;
+    background-color: #5b879532;
+}
+
+#container .container_inner .container_right #right_slide_ad {
+    margin-top: 16px;
+    height: 136px;
+    background-color: #955b5d32;
+}
+
+#container .container_inner .container_right #weather {
+    margin-top: 16px;
+    height: 235.6px;
+    background-color: #b9cc7539;
+}
+
+#container .container_inner .container_right #stock {
+    margin-top: 16px;
+    height: 235.6px;
+    background-color: #75b3cc39;
+}
+
+#container .container_inner .container_right #right_sub_ad_2 {
+    margin-top: 16px;
+    height: 240px;
+    background-color: #75cc9f39;
+}
+
+#container .container_inner .container_right #widget {
+    margin-top: 16px;
+    height: 516px;
+    background-color: #8675cc39;
+}
+
+#container .container_inner .container_right #naver_ad {
+    margin-top: 16px;
+    height: 80px;
+    background-color: #cc9b7539;
+}
+
+
+
+
+
+
+
+
+
+
 .footer_inner a:hover {
     border-bottom: 1.5px solid black;
 }
@@ -264,6 +384,7 @@ button:hover {cursor:pointer;}
 
 .footer_inner .notice_area div {
     display: inline-block;
+    font-size: 13px;
 }
 
 .footer_inner .notice_area .footer_notice_right {
@@ -325,7 +446,7 @@ button:hover {cursor:pointer;}
 }
 
 .footer_inner .corp_area {
-    margin: 20px auto 20px auto;
+    margin: 20px auto 0px auto;
     text-align: center;
     font-size: 13px;
 }
