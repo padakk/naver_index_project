@@ -322,6 +322,19 @@ button:hover {cursor:pointer;}
     width: 40px;
     height: 40px;
 }
+/* new 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .new_icon {
+    position: absolute;
+    top: -6px;
+    left: 16px;
+    background-image: url('images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -33px -349px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 22px;
+    z-index: 3;
+}
 /* 뉴스 아이콘 */
 .shortcut_area .shortcut_list .shortcut_item .type_news::after {
     background-image: url('images/sp_main.b27083b1.png');
@@ -484,7 +497,7 @@ button:hover {cursor:pointer;}
     font-size: 13.3px;
     font-weight: 300;
     position: relative;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 #container .container_inner .container_right .naver_account .naver_account_more .account_more_item:hover {
