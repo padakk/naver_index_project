@@ -277,7 +277,7 @@ button:hover {cursor:pointer;}
 #container .container_inner .container_left #feed {
     margin-top: 16px;
     height: 1143.3px;
-    background-color: rgba(237, 160, 184, 0.183);
+    background-color: rgba(237, 160, 198, 0.183);
 }
 
 #container .container_inner .container_left #left_sub_ad {
@@ -293,6 +293,8 @@ button:hover {cursor:pointer;}
     width: 420px;
     margin-left: 30px;
     float: right;
+    position: sticky; /* 스크롤 시 따라오도록 설정 */
+    top: -1308px;        /* 상단에서 멈출 위치 */
 }
 
 #container .container_inner .container_right #naver_account {
