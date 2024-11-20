@@ -1,3 +1,5 @@
+/* ========================= 헤더 쪽 스크립트 ========================= */
+
 /* 페이지 실행 시 검색바 포커스 */
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.search_input').focus();
@@ -20,3 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
         logo.style.opacity = 1; // 페이드인
     }, 3000); //실행되는 시간
 });
+
+/* ===================================================================== */

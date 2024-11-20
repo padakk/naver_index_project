@@ -45,6 +45,13 @@ button:hover {cursor:pointer;}
     padding: 30px 8px 80px 8px;
 }
 
+
+
+
+/* =========================== 헤더 ========================== */
+/* =========================== 헤더 ========================== */
+/* =========================== 헤더 ========================== */
+
 /* 메뉴바 */
 #header .header_inner .menu_area div {
     display: inline-block;
@@ -179,6 +186,8 @@ button:hover {cursor:pointer;}
 .search_wrap .search .search_input:focus::placeholder {
     opacity: 1; 
 }
+
+/* 버튼 정렬 */
 .search_wrap .search .search_menu {
     margin-left: 24px;
     display: flex;              /* Flexbox 활성화 */
@@ -397,6 +406,11 @@ button:hover {cursor:pointer;}
     width: 40px;
     height: 40px;
 }
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */
+
+
 
 
 
@@ -405,6 +419,11 @@ button:hover {cursor:pointer;}
     border-radius: 8px;
     border: 1.4px solid #bebebe46;
 }
+
+
+/* ======================= 왼쪽 컨테이너 ====================== */
+/* ======================= 왼쪽 컨테이너 ====================== */
+/* ======================= 왼쪽 컨테이너 ====================== */
 /* 왼쪽 컨테이너 */
 #container .container_inner .container_left {
     display: inline-block;
@@ -446,32 +465,40 @@ button:hover {cursor:pointer;}
     font-weight: bold;
     font-size: 26px;
 }
+/* 링크 밑줄효과(div) */
 .container_inner .container_left .news .news_header a:hover {
     border-bottom: 1.4px solid black;
 }
-
-
+/* 쇼핑 */
 #container .container_inner .container_left .container_shopping {
     margin-top: 16px;
     height: 559.6px;
     background-color: rgba(160, 230, 237, 0.183);
 }
-
+/* 피드 */
 #container .container_inner .container_left .feed {
     margin-top: 16px;
     height: 1143.3px;
     background-color: rgba(237, 160, 198, 0.183);
 }
-
+/* 서브광고 */
 #container .container_inner .container_left .left_sub_ad {
     margin-top: 16px;
     height: 60px;
     background-color: rgba(160, 230, 237, 0.183);
 }
+/* ============================================================= */
+/* ============================================================= */
+/* ============================================================= */
 
 
 
 
+
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* 오른쪽 컨테이너 */
 #container .container_inner .container_right {
     width: 420px;
     margin-left: 30px;
@@ -486,13 +513,13 @@ button:hover {cursor:pointer;}
     text-align: center;
     padding: 21px 20px 18px 20px;
 }
-
+/* 로그인 안내문구 */
 #container .container_inner .container_right .naver_account p {
     margin-bottom: 10px;
     font-size: 14.5px;
     font-weight: 400;
 }
-
+/* 로그인 버튼 */
 #container .container_inner .container_right .naver_account .btn_login {
     display: block;
     padding: 17px 0;
@@ -505,7 +532,7 @@ button:hover {cursor:pointer;}
     font-size: 14.5px;
     color: #fff;
 }
-
+/* 로그인 버튼 안에 로고 */
 #container .container_inner .container_right .naver_account .naver_account_logo {
     background-image: url('images/sp_main.b27083b1.png');
     background-size: 463px 440px;
@@ -517,11 +544,11 @@ button:hover {cursor:pointer;}
     margin: 3px 8px 0 0;
     vertical-align: top;
 }
-
+/* 아이디찾기, 비밀번호 찾기, 회원가입 */
 #container .container_inner .container_right .naver_account .naver_account_more {
     margin-top: 10px;
 }
-
+/* 아이디찾기, 비밀번호 찾기, 회원가입 */
 #container .container_inner .container_right .naver_account .naver_account_more .account_more_item {
     font-size: 13.3px;
     font-weight: 300;
@@ -540,73 +567,74 @@ button:hover {cursor:pointer;}
     top: 50%;
     transform: translateY(-50%);
 }
-
+/* 링크에 밑줄 효과(div) */
 #container .container_inner .container_right .naver_account .naver_account_more .account_more_item:hover {
     border-bottom: 1.4px solid black;
 }
-
+/* 메인광고 */
 #container .container_inner .container_right .right_main_ad {
     margin-top: 16px;
     height: 244px;
     background-color: #03c75b4b;
 }
-
+/* 서브광고 */
 #container .container_inner .container_right .right_sub_ad {
     margin-top: 16px;
     height: 80px;
     background-color: #5b879532;
 }
-
+/* 슬라이드 광고 */
 #container .container_inner .container_right .right_slide_ad {
     margin-top: 16px;
     height: 136px;
     background-color: #955b5d32;
 }
-
+/* 날씨 */
 #container .container_inner .container_right .weather {
     margin-top: 16px;
     height: 235.6px;
     background-color: #b9cc7539;
 }
-
+/* 증시 */
 #container .container_inner .container_right .stock {
     margin-top: 16px;
     height: 235.6px;
     background-color: #75b3cc39;
 }
-
+/* 서브광고2 */
 #container .container_inner .container_right .right_sub_ad_2 {
     margin-top: 16px;
     height: 240px;
     background-color: #75cc9f39;
 }
-
+/* 위젯 */
 #container .container_inner .container_right .widget {
     margin-top: 16px;
     height: 516px;
     background-color: #8675cc39;
 }
-
+/* 네이버광고 */
 #container .container_inner .container_right .naver_ad {
     margin-top: 16px;
     height: 80px;
     background-color: #cc9b7539;
 }
+/* ========================================================= */
+/* ========================================================= */
+/* ========================================================= */
 
 
 
 
 
-
-
-
-
-
+/* ========================== 푸터 ========================= */
+/* ========================== 푸터 ========================= */
+/* ========================== 푸터 ========================= */
 .footer_inner a:hover {
     border-bottom: 1.4px solid black;
 }
 
-/* footer 배너 */
+/* 푸터 배너 */
 .footer_inner .banner_area {
     display: flex; 
     justify-content: space-between; 
@@ -614,33 +642,35 @@ button:hover {cursor:pointer;}
     padding-bottom: 30px; 
     border-bottom: 1px solid #ebebeb;
 }
-
+/* 푸터 배너 */
 .footer_inner .banner_area .footer_banner {
     width: 410px;
     height: 100px;
     background-color: aqua;
 }
-
-.footer_inner .notice_area, .aside_area {
+/* 공지사항, 어사이드 */
+.footer_inner .notice_area,
+.footer_inner .aside_area {
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ebebeb;
 }
-
+/* 공지사항 */
 .footer_inner .notice_area div {
     display: inline-block;
     font-size: 13px;
 }
-
+/* 공지사항 오른쪽 */
 .footer_inner .notice_area .footer_notice_right {
     float: right;
 }
-
-.aside_area .footer_aside_left, .aside_area .footer_aside_right {
+/* 어사이드 */
+.aside_area .footer_aside_left, 
+.aside_area .footer_aside_right {
     font-size: 13px;
     display: inline-block;
 }
-
+/* 어사이드 왼쪽 */
 .aside_area .footer_aside_left span {
     display: inline-block;
     width: 100px;
@@ -649,7 +679,8 @@ button:hover {cursor:pointer;}
 .aside_area .footer_aside_left a {
     color: rgba(0, 0, 0, 0.705);
 }
-.footer_inner .aside_area .footer_aside_left a, .footer_inner .corp_area a{
+.footer_inner .aside_area .footer_aside_left a,
+.footer_inner .corp_area a{
     position: relative; /* 구분자 위치 설정 */
     margin-right: 10px;
 }
@@ -666,32 +697,33 @@ button:hover {cursor:pointer;}
     top: 50%;
     transform: translateY(-50%);
 }
-
+/* 어사이드 왼쪽 */
 .aside_area .footer_aside_left div {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+/* 어사이드 오른쪽 */
 .aside_area .footer_aside_right {
     display: inline;
     float: right;
 }
-
+/* 어사이드 a링크 */
 .aside_area .footer_aside_right a {
     display: block;
     width: fit-content;
     padding-top: 8px;
     font-size: 13px;
 }
-
-.aside_area .footer_aside_right .service, .aside_area .footer_aside_right .service_image, .aside_area .footer_aside_right .service_content{
+/* 오른쪽 서비스항목 */
+.aside_area .footer_aside_right .service, .aside_area .footer_aside_right .service_image, 
+.aside_area .footer_aside_right .service_content{
     display: inline-block;
 }
-
+/* 오른쪽 서비스항목 */
 .aside_area .footer_aside_right .service {
     margin-right: 25px;
 }
-
+/* 푸터 맨 마지막줄 */
 .footer_inner .corp_area {
     margin: 20px auto 0px auto;
     text-align: center;
@@ -702,4 +734,11 @@ button:hover {cursor:pointer;}
 .footer_inner .corp_area a.cust_service::after {
     content: none;
 }
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
+
+
+
+
 
