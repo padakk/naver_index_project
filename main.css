@@ -272,7 +272,7 @@ button:hover {cursor:pointer;}
     height: 50px;
     z-index: 1;
 }
-
+/* 각 리스트에 해당하는 숏컷이미지 */
 .shortcut_area .shortcut_list .shortcut_item .shortcut_item_icon::after {
     content: "";
     display: block;
@@ -405,22 +405,51 @@ button:hover {cursor:pointer;}
     border-radius: 8px;
     border: 1.4px solid #bebebe46;
 }
-
+/* 왼쪽 컨테이너 */
 #container .container_inner .container_left {
     display: inline-block;
     width: 830px;
 }
-
+/* 왼쪽 메인광고 */
 #container .container_inner .container_left .left_main_ad {
     height: 130px;
     background-color: #03c75b4b;
 }
-
+/* 뉴스 */
 #container .container_inner .container_left .news {
     margin-top: 16px;
     height: 425.6px;
-    background-color: rgba(160, 175, 237, 0.183);
+    background-color: rgba(160, 175, 237, 0.066);
+    padding: 16px;
 }
+/* a태그 사이에 구분자 추가 */
+.container_inner .container_left .news .news_header a:not(:last-child)::after{
+    content: '/';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 뉴스 타이틀 */
+.container_inner .container_left .news .news_header .news_header_title {
+    position: relative; /* 구분자 위치 설정 */
+    margin-right: 20px;
+    font-weight: bold;
+}
+/* 뉴스스탠드에만 구분자 변경 */
+.container_inner .container_left .news .news_header a.news_stand::after {
+    content: '·';
+    font-weight: bold;
+    font-size: 26px;
+}
+.container_inner .container_left .news .news_header a:hover {
+    border-bottom: 1.4px solid black;
+}
+
 
 #container .container_inner .container_left .container_shopping {
     margin-top: 16px;
@@ -497,7 +526,19 @@ button:hover {cursor:pointer;}
     font-size: 13.3px;
     font-weight: 300;
     position: relative;
-    margin-right: 10px;
+    margin-right: 18px;
+}
+/* a태그 사이에 구분자 추가 */
+.container_inner .container_right .naver_account .naver_account_more a:not(:last-child)::after{
+    content: '|';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0 2px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #container .container_inner .container_right .naver_account .naver_account_more .account_more_item:hover {
@@ -562,7 +603,7 @@ button:hover {cursor:pointer;}
 
 
 .footer_inner a:hover {
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.4px solid black;
 }
 
 /* footer 배너 */
@@ -614,8 +655,7 @@ button:hover {cursor:pointer;}
 }
 /* a태그 사이에 구분자 추가 */
 .footer_inner .aside_area .footer_aside_left a:not(:last-child)::after,
-.footer_inner .corp_area a:not(:last-child)::after,
-.container_inner .container_right .naver_account .naver_account_more a:not(:last-child)::after{
+.footer_inner .corp_area a:not(:last-child)::after{
     content: '|';
     color: rgba(177, 177, 177, 0.289);
     margin: 0 8px;
