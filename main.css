@@ -390,7 +390,7 @@ button:hover {cursor:pointer;}
 /* 컨테이너 박스들 테두리 */
 #container .container_inner .container_contents {
     border-radius: 8px;
-    border: 1.2px solid #bebebe4e;
+    border: 1.4px solid #bebebe46;
 }
 
 #container .container_inner .container_left {
@@ -437,10 +437,58 @@ button:hover {cursor:pointer;}
     position: sticky; /* 스크롤 시 따라오도록 설정 */
     top: -1308px;        /* 상단에서 멈출 위치 */
 }
-
+/* 로그인 */
 #container .container_inner .container_right .naver_account {
-    height: 163.3px;
-    background-color: rgba(125, 107, 133, 0.211);
+    height: 124.3px;
+    background-color: #fff;
+    text-align: center;
+    padding: 21px 20px 18px 20px;
+}
+
+#container .container_inner .container_right .naver_account p {
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+#container .container_inner .container_right .naver_account .btn_login {
+    display: block;
+    padding: 17px 0;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+    text-decoration: none;
+    font-size: 14.5px;
+    color: #fff;
+}
+
+#container .container_inner .container_right .naver_account .naver_account_logo {
+    background-image: url('images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: 0px -301px;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 14px;
+    display: inline-block;
+    margin: 3px 8px 0 0;
+    vertical-align: top;
+}
+
+#container .container_inner .container_right .naver_account .naver_account_more {
+    margin-top: 10px;
+}
+
+#container .container_inner .container_right .naver_account .naver_account_more .account_more_item {
+    font-size: 13.3px;
+    font-weight: 300;
+    position: relative;
+    margin-right: 15px;
+}
+
+#container .container_inner .container_right .naver_account .naver_account_more .account_more_item:hover {
+    border-bottom: 1.4px solid black;
 }
 
 #container .container_inner .container_right .right_main_ad {
@@ -552,17 +600,20 @@ button:hover {cursor:pointer;}
     margin-right: 10px;
 }
 /* a태그 사이에 구분자 추가 */
-.footer_inner .aside_area .footer_aside_left a:not(:last-child)::after, .footer_inner .corp_area a:not(:last-child)::after {
+.footer_inner .aside_area .footer_aside_left a:not(:last-child)::after,
+.footer_inner .corp_area a:not(:last-child)::after,
+.container_inner .container_right .naver_account .naver_account_more a:not(:last-child)::after{
     content: '|';
     color: rgba(177, 177, 177, 0.289);
     margin: 0 8px;
     font-weight: normal;
     display: inline-block;
     position: absolute;
-    right: -17px; /* 구분자가 a 태그 외부에 위치하도록 설정 */
+    right: -17px;
     top: 50%;
-    transform: translateY(-50%); /* 수평 중앙 맞추기 */
+    transform: translateY(-50%);
 }
+
 .aside_area .footer_aside_left div {
     padding-top: 5px;
     padding-bottom: 5px;
