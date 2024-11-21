@@ -352,3 +352,11 @@
     width: 40px;
     height: 40px;
 }
+/* 헤더 우측 광고 */
+#header .header_inner .header_ad {
+    position: relative;
+    width: 244px;
+    height: 108px;
+    left: 1036px;
+    top: -134px;
+}
