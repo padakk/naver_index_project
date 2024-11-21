@@ -3,11 +3,6 @@
     border-radius: 8px;
     border: 1.4px solid #bebebe46;
 }
-
-
-/* ======================= 왼쪽 컨테이너 ====================== */
-/* ======================= 왼쪽 컨테이너 ====================== */
-/* ======================= 왼쪽 컨테이너 ====================== */
 /* 왼쪽 컨테이너 */
 #container .container_inner .container_left {
     display: inline-block;
@@ -66,7 +61,6 @@
 /* 헤더에 스포츠 버튼 라이브 폰트 */
 .container_inner .container_left .news .news_header .font_live {
     background-color: #f4361e;
-    /* background-color: var(--color_live_news_price); */
     display: inline-block;
     margin: 3px 0 0 5px;
     padding: 0 5px 0 4px;
