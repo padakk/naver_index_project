@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquareNeo/nanumsquareneo.css');
+
 /* 컨테이너 박스들 테두리 */
 #container .container_inner .container_right .container_contents {
     border-radius: 8px;
@@ -106,6 +108,67 @@
 /* 슬라이드 광고 */
 #container .container_inner .container_right .right_slide_ad {
     margin-top: 16px;
+    padding: 18px;
     height: 136px;
-    background-color: #955b5d32;
+    display: flex;
+    overflow: hidden;
+    background-color: #955b5d0d;
 }
+/* 슬라이드 광고 헤더 */
+.container_right .right_slide_ad .reco_shopping_view_header {
+    flex-shrink: 0;
+    width: 80px;
+    margin-right: 18px;
+}
+/* 슬라이드 광고 헤더 폰트 */
+.container_right .right_slide_ad .reco_shopping_view_header .slide_ad_title .reco_shopping_view__title {
+    font-family: 'NanumSquareNeo', sans-serif;
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 800;
+}
+
+/* 슬라이드 광고 헤더 폰트 아래 ad로고 */
+.reco_shopping_view_tag_ad {
+    position: relative;
+    padding: 0 6px 0 6px;
+    border: 1px solid #e3e5e8;
+    color: var(--color_caption2);
+    margin: 0 0 18px 18px;
+    box-sizing: border-box;
+    line-height: 18px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    top: 50px;
+    left: -20px;
+}
+/* 슬라이드 광고 아이템 설명 */
+.recoShoppingView_title__v7bm2 {
+    display: -webkit-box;         /* flexbox처럼 동작하게 설정 */
+    -webkit-line-clamp: 2;        /* 텍스트를 2줄까지만 표시 */
+    -webkit-box-orient: vertical; /* 텍스트를 세로로 정렬 */
+    overflow: hidden;             /* 넘치는 텍스트 숨기기 */
+    font-size: 14px;
+    width: 90px;                  /* 너비 설정 */
+    margin-top: 7px;
+}
+/* 슬라이드 광고 이미지 div */
+.reco_shopping_view_shopping_group .recoShoppingView_item_list__7Rf4A .recoShoppingView_item__R5HaM .recoShoppingView_inner__aKl9u {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #b4b4b457;
+    overflow: hidden;
+    height: 90px;
+}
+/* 슬라이드 광고 이미지 */
+.reco_shopping_view_shopping_group .recoShoppingView_item_list__7Rf4A .recoShoppingView_item__R5HaM .recoShoppingView_inner__aKl9u .recoShoppingView_img__udoPB {
+    position: relative;
+    image-rendering: -webkit-optimize-contrast;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);
+}
+/* 슬라이드 광고 가격 안보이게 */
+.recoShoppingView_price__Pae5j {
+    display: none;
+}
+
