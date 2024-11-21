@@ -1,6 +1,8 @@
 /* ========================= 헤더 쪽 스크립트 ========================= */
 
-/* 페이지 실행 시 검색바 포커스 */
+/** 페이지 실행 시 검색바 포커스
+ * 
+ */ 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.search_input').focus();
 });
