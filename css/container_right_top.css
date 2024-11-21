@@ -108,40 +108,50 @@
 /* 슬라이드 광고 */
 #container .container_inner .container_right .right_slide_ad {
     margin-top: 16px;
-    padding: 18px;
-    height: 136px;
+    padding: 18px; /* padding을 여전히 적용 */
     display: flex;
     overflow: hidden;
-    background-color: #955b5d0d;
+    background-color: #f9fbfd;
 }
 /* 슬라이드 광고 헤더 */
 .container_right .right_slide_ad .reco_shopping_view_header {
     flex-shrink: 0;
     width: 80px;
-    margin-right: 18px;
+    margin-right: 16px;
 }
 /* 슬라이드 광고 헤더 폰트 */
-.container_right .right_slide_ad .reco_shopping_view_header .slide_ad_title .reco_shopping_view__title {
+.container_right .right_slide_ad .reco_shopping_view_header .slide_ad_title .reco_shopping_view_title {
     font-family: 'NanumSquareNeo', sans-serif;
     font-size: 17px;
-    line-height: 19px;
+    line-height: 24px;
     font-weight: 800;
+    display: block;
 }
-
 /* 슬라이드 광고 헤더 폰트 아래 ad로고 */
 .reco_shopping_view_tag_ad {
     position: relative;
     padding: 0 6px 0 6px;
     border: 1px solid #e3e5e8;
-    color: var(--color_caption2);
+    color: rgb(109, 109, 109);
     margin: 0 0 18px 18px;
     box-sizing: border-box;
     line-height: 18px;
     border-radius: 4px;
     text-align: center;
     font-size: 13px;
-    top: 50px;
+    top: 44px;
     left: -20px;
+}
+/* 슬라이드 광고 아이템 리스트 ul */
+.recoShoppingView_item_list {
+    display: flex;
+    flex-wrap: nowrap;   /* 자식 요소들이 넘쳐도 줄 바꿈하지 않음 */
+    overflow: hidden;
+}
+/* 슬라이드 광고 아이템 리스트 */
+.recoShoppingView_item__R5HaM {
+    display: inline-block;
+    margin-left: 5px;
 }
 /* 슬라이드 광고 아이템 설명 */
 .recoShoppingView_title__v7bm2 {
@@ -150,25 +160,45 @@
     -webkit-box-orient: vertical; /* 텍스트를 세로로 정렬 */
     overflow: hidden;             /* 넘치는 텍스트 숨기기 */
     font-size: 14px;
-    width: 90px;                  /* 너비 설정 */
+    width: 90px; 
     margin-top: 7px;
 }
+/* 아이템 설명 글자기울기제거 */
+.recoShoppingView_item_list .recoShoppingView_item__R5HaM em {
+    font-style: normal;
+}
 /* 슬라이드 광고 이미지 div */
-.reco_shopping_view_shopping_group .recoShoppingView_item_list__7Rf4A .recoShoppingView_item__R5HaM .recoShoppingView_inner__aKl9u {
+.reco_shopping_view_shopping_group .recoShoppingView_item_list .recoShoppingView_item__R5HaM .recoShoppingView_inner__aKl9u {
     position: relative;
     border-radius: 4px;
     border: 1px solid #b4b4b457;
     overflow: hidden;
     height: 90px;
 }
-/* 슬라이드 광고 이미지 */
-.reco_shopping_view_shopping_group .recoShoppingView_item_list__7Rf4A .recoShoppingView_item__R5HaM .recoShoppingView_inner__aKl9u .recoShoppingView_img__udoPB {
-    position: relative;
-    image-rendering: -webkit-optimize-contrast;
-    transition: transform .2s cubic-bezier(.165,.84,.44,1);
-}
 /* 슬라이드 광고 가격 안보이게 */
 .recoShoppingView_price__Pae5j {
     display: none;
 }
-
+/* 슬라이드 버튼 */
+.btn_slide {
+    position: absolute;
+    top: 590px;
+    left: 110px;
+    z-index: 3;
+}
+/* 슬라이드 오른쪽 버튼 */
+.btn_slide .btn_slide_right {
+    position: relative;
+    left: 236px;
+}
+/* 슬라이드 버튼 */
+.reco_shopping_view_shopping_group .reco_shopping_view_shopping_inner .btn_slide .btn_slide_left,
+.reco_shopping_view_shopping_group .reco_shopping_view_shopping_inner .btn_slide .btn_slide_right {
+    border: 1px solid #dadcdf;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-weight: 900;
+    color: rgba(142, 142, 142, 0.89);
+}
