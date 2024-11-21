@@ -1,0 +1,12 @@
+/* 피드 */
+#container .container_inner .container_left .feed {
+    margin-top: 16px;
+    height: 1143.3px;
+    background-color: rgba(237, 160, 198, 0.183);
+}
+/* 서브광고 */
+#container .container_inner .container_left .left_sub_ad {
+    margin-top: 16px;
+    height: 60px;
+    background-color: rgba(160, 230, 237, 0.183);
+}

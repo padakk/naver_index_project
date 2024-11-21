@@ -1,0 +1,163 @@
+/* 컨테이너 박스들 테두리 */
+#container .container_inner .container_contents {
+    border-radius: 8px;
+    border: 1.4px solid #bebebe46;
+}
+
+
+/* ======================= 왼쪽 컨테이너 ====================== */
+/* ======================= 왼쪽 컨테이너 ====================== */
+/* ======================= 왼쪽 컨테이너 ====================== */
+/* 왼쪽 컨테이너 */
+#container .container_inner .container_left {
+    display: inline-block;
+    width: 830px;
+}
+/* 왼쪽 메인광고 */
+#container .container_inner .container_left .left_main_ad {
+    height: 130px;
+    background-color: #03c75b4b;
+}
+/* 뉴스 */
+#container .container_inner .container_left .news {
+    margin-top: 16px;
+    height: 425.6px;
+    background-color: rgba(234, 235, 239, 0.066);
+}
+/* a태그 사이에 구분자 추가 */
+.container_inner .container_left .news .news_header a:not(:last-child)::after{
+    content: '/';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 뉴스 헤더 */
+.container_inner .container_left .news .news_header {
+    padding: 18px 20px 17px;
+}
+/* 뉴스 타이틀 */
+.container_inner .container_left .news .news_header .news_header_title {
+    position: relative; /* 구분자 위치 설정 */
+    margin-right: 20px;
+    font-weight: bold;
+    color:rgba(128, 128, 128, 0.831)
+}
+/* 뉴스스탠드에만 구분자 변경 */
+.container_inner .container_left .news .news_header a.news_stand::after {
+    content: '·';
+    font-weight: bold;
+    font-size: 26px;
+}
+/* 뉴스 헤더 밑줄효과 */
+.container_inner .container_left .news .news_header_title:hover,
+.container_inner .container_left .news .news_sub_header a:hover {
+    border-bottom: 1.4px solid black;
+}
+/* 헤더에 스포츠 버튼 라이브 폰트 */
+.container_inner .container_left .news .news_header .font_live {
+    background-color: #f4361e;
+    /* background-color: var(--color_live_news_price); */
+    display: inline-block;
+    margin: 3px 0 0 5px;
+    padding: 0 5px 0 4px;
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 900;
+    vertical-align: top;
+    color: #fff;
+}
+/* 헤더에 스포츠 버튼 라이브 아이콘 */
+.container_inner .container_left .news .news_header .icon_live {
+    content: "";
+    display: inline-block;
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -358px -301px;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 10px;
+    margin: 4px 3px 0 0;
+    vertical-align: top;
+}
+.container_inner .container_left .news .news_header .sports_live {
+    margin-left: -26px;
+}
+/* 스포츠 뒤에 오는 구분자만 오른쪽으로 밀기 */
+#container .container_inner .container_left .news .news_header .sports::after {
+    right: -70px;
+}
+/* 뉴스 서브헤더 */
+.container_inner .container_left .news .news_item .news_sub_header {
+    background-color: #f5f7f8;
+    position: relative;
+    display: -webkit-box;
+    margin: 0 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between; /* 양쪽 끝으로 배치 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+/* 뉴스서브헤더 화살표 이미지 */
+.container_inner .container_left .news .news_item .news_sub_header .img_arrow {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -242px -184px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -52px;
+}
+/* 뉴스서브헤더 구분자 스타일*/ 
+#container .container_inner .container_left .container_contents .divider {
+    color: rgba(177, 177, 177, 0.559);
+    margin: 0px;
+    font-weight: normal;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+}
+#container .container_inner .container_left .container_contents .divider_1_one {
+    left: 120px;
+}
+#container .container_inner .container_left .container_contents .divider_1_two {
+    left: 716px;
+}
+/* 뉴스서브헤더 구분자 스타일_2*/ 
+#container .container_inner .container_left .container_contents .divider_2 {
+    color: rgba(177, 177, 177, 0.354);
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+    top: 50%;
+}
+.container_left .news .news_item .news_sub_header_title {
+    display: inline-block;
+    font-weight: 500;
+    margin-left: -20px;
+}
+/* 뉴스 서브헤더 오른쪽 div */
+.container_left .container_contents .news_sub_header .news_sub_header_right {
+    display: inline;
+    float: right;
+}
+.container_left .container_contents .news_sub_header .news_sub_header_right a {
+    font-weight: 500;
+}
+.container_left .container_contents .news_sub_header .news_sub_header_right a.news_home {
+    font-weight: 900;
+}

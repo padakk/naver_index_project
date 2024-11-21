@@ -1,0 +1,51 @@
+* {margin: 0; padding: 0;}
+a {text-decoration:none; color:black;}
+ul{list-style:none;padding-left:0px;}
+body {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;}
+input {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;}
+button{border:0; background-color:transparent;}
+button:hover {cursor:pointer;}
+/* 커서 가져다댔을 때 나오는 툴팁(말풍선) */
+.tooltip {
+    display: none;
+}
+
+#wrap {
+    min-width: 1340px;
+}
+
+#header {
+    width: 1280px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+#container {
+    background-color: white;
+    width: 1280px;
+    margin: 5px auto 5px auto;
+    display: flex; /* flexbox 활성화 */
+    flex-direction: row; /* 가로 방향으로 정렬 */
+    justify-content: space-between; /* 왼쪽, 오른쪽 영역의 간격을 자동으로 조정 */
+    flex-wrap: wrap; /* 내용이 넘치면 다음 줄로 넘어가도록 설정 */
+}
+
+#footer {
+    background-color: #f5f6f7;
+    margin: 0 auto;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    margin-top: 55px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#footer .footer_inner {
+    width: 1280px;
+    margin:0 auto;
+    padding: 30px 8px 80px 8px;
+}
+
+

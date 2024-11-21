@@ -1,0 +1,361 @@
+/* =========================== 헤더 ========================== */
+/* =========================== 헤더 ========================== */
+/* =========================== 헤더 ========================== */
+
+/* 메뉴바 */
+#header .header_inner .menu_area div {
+    display: inline-block;
+}
+#header .header_inner .menu_left, .menu_right {
+    margin-top: 10px;
+}
+#header .header_inner .menu_right {
+    float: right;
+}
+/* 메뉴바의 메뉴버튼들 */
+#header .header_inner .menu_area .menu, .pay, .talk, .alarm, .cart {
+    position: relative;
+    padding: 4px;
+}
+/* 메뉴버튼 */ 
+#header .header_inner .menu_area .menu .btn_menu::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-position: -311px -167.5px;
+    background-size: 463px 440px; 
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block; 
+    content: ''; 
+}
+/* 페이버튼 */
+#header .header_inner .menu_area .pay .btn_pay::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-position: -247.5px -260px;
+    background-size: 463px 440px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 톡버튼 */
+#header .header_inner .menu_area .talk .btn_talk::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-position: -101.5px -318.5px; 
+    background-size: 463px 440px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: '';
+}
+/* 알람버튼 */
+#header .header_inner .menu_area .alarm .btn_alarm::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-position: -315.5px -235px; 
+    background-size: 463px 440px; 
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: '';
+}
+/* 카트버튼 */
+#header .header_inner .menu_area .cart .btn_cart::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-position: -36px -318.5px;
+    background-size: 463px 440px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+    content: ''; 
+}
+/* 검색상자 */
+#header .header_inner .search_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+}
+/* 검색상자 커서 올렸을 때 그림자효과 */
+#header .header_inner .search_wrap:hover {
+    box-shadow: 0 3px 5px rgba(20, 20, 20, 0.094); /* 그림자 설정 */
+}
+
+.search_wrap .search {
+    display: flex; /* input 크기 딱 맞춰주기 위해 설정 */
+    align-items: center; /* 자식요소 정렬 */
+    height: 58px; /* 부모요소 높이 설정 */
+}
+
+/* 네이버 로고 (첫번째) */
+.search_wrap .search .naver_logo_hat {
+    position: absolute;
+    opacity: 1; /* 초기 상태에서 보이도록 설정 */
+    transition: opacity .5s ease-in-out; /* 페이드아웃 효과 */
+}
+
+.search_wrap .search .naver_logo_hat img {
+    padding: 5px 0 0 10px;
+}
+
+/* 네이버 로고 (두번째) */
+.search_wrap .search .naver_logo {
+    font-family: "Arial Black", sans-serif;
+    position: relative;
+    padding: 8px 16px 8px 27px;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 34px;
+    color: #03c75a;
+    opacity: 0; /* 초기 상태에서 숨김 */
+    transition: opacity .5s ease-in-out; /* 페이드인 효과 */
+}
+
+/* 검색란 placeholder 색상설정 */
+.search_wrap .search .search_input::placeholder {
+    font-weight: 500;
+    color:rgb(202, 202, 189);
+    opacity: 0; 
+}
+/* 검색 input */
+.search_wrap .search .search_input {
+    width: 70%;
+    height: 58px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 600;
+    outline: 0;
+}
+/* 포커스 시 placeholder 출력 */
+.search_wrap .search .search_input:focus::placeholder {
+    opacity: 1; 
+}
+
+/* 버튼 정렬 */
+.search_wrap .search .search_menu {
+    margin-left: 24px;
+    display: flex;              /* Flexbox 활성화 */
+    flex-direction: row;        /* 세로 정렬 */
+    align-items: center;        /* 버튼 중앙 정렬 */
+    gap: 5px;                   /* 버튼 간 간격 */
+}
+
+.search_wrap .search .search_menu div {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/* 검색바 키보드 */
+.search_wrap .search .search_menu .search_keyboard .btn_keyboard::before {
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-size: 463px 440px;
+    background-position: -123px -301px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 14px;
+    display: inline-block; 
+    content: ''; 
+}
+/* 검색바 화살표 버튼 */
+.search_wrap .search .search_menu .search_arrow .btn_arrow::before {
+    content: "";
+    display: block;
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -221px -184px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 8px;
+}
+/* 검색버튼 */
+.search_wrap .search .search_menu .search_icon .btn_search::before{
+    background-image: url('../images/sp_main.b27083b1.png'); 
+    background-size: 463px 440px; 
+    background-position: -406px -78px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block; 
+    content: '';
+} 
+
+/* 숏컷 */
+#header .header_inner .shortcut_area {
+    position: relative;
+    width: 650px;
+    margin: 10px auto 0 auto;
+    padding-bottom: 32px;
+    height: 64px;
+}
+/* 숏컷아이템 동일한 간격으로 정렬 */
+.shortcut_area .shortcut_list {
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 46px; 
+    padding: 0; 
+}
+/* 숏컷아이템 */
+.shortcut_area .shortcut_list .shortcut_item {
+    display: inline-block;
+    position: relative;
+    justify-content: flex-start; /* 가로 정렬 */
+    text-align: center;
+    font-size: 13px;
+}
+/* 숏컷 아이템 이름 */
+.shortcut_area .shortcut_list .shortcut_item .shortcut_item_name {
+    position: absolute;
+    width: 50px;
+    top : 50px;
+    margin-left: -3px;
+}
+
+/* 숏컷 기본배경이미지 */
+.shortcut_area .shortcut_list .shortcut_item .shortcut_item_icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -153px -142px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+/* 각 리스트에 해당하는 숏컷이미지 */
+.shortcut_area .shortcut_list .shortcut_item .shortcut_item_icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+/* 메일 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_mail::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -205px -219px; /* 메일 아이콘 위치 */
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+/* 카페 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_cafe::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -41px -219px; /* 카페 아이콘 위치 */
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 블로그 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_blog::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: 0px -219px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 스토어 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_store::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -41px -260px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* new 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .new_icon {
+    position: absolute;
+    top: -6px;
+    left: 16px;
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -33px -349px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 22px;
+    z-index: 3;
+}
+/* 뉴스 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_news::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -270px -205px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 증권 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_stock::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -123px -260px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 부동산 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_realty::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: 0px -260px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 지도 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_map::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -270px 0px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 웹툰 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_webtoon::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -164px -260px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* 치지직 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .service_img {
+    left: 2px;
+    top: 3px;
+    position: absolute; 
+    z-index: 2;
+}
+
+/* 더보기 아이콘 */
+.shortcut_area .shortcut_list .shortcut_item .type_moreview::after {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -270px -164px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */

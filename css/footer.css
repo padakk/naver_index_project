@@ -1,0 +1,110 @@
+/* ========================== 푸터 ========================= */
+/* ========================== 푸터 ========================= */
+/* ========================== 푸터 ========================= */
+.footer_inner a:hover {
+    border-bottom: 1.4px solid black;
+}
+
+/* 푸터 배너 */
+.footer_inner .banner_area {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 30px; 
+    border-bottom: 1px solid #ebebeb;
+}
+/* 푸터 배너 */
+.footer_inner .banner_area .footer_banner {
+    width: 410px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.132);
+}
+/* 공지사항, 어사이드 */
+.footer_inner .notice_area,
+.footer_inner .aside_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+/* 공지사항 */
+.footer_inner .notice_area div {
+    display: inline-block;
+    font-size: 13px;
+}
+/* 공지사항 오른쪽 */
+.footer_inner .notice_area .footer_notice_right {
+    float: right;
+}
+/* 어사이드 */
+.aside_area .footer_aside_left, 
+.aside_area .footer_aside_right {
+    font-size: 13px;
+    display: inline-block;
+}
+/* 어사이드 왼쪽 */
+.aside_area .footer_aside_left span {
+    display: inline-block;
+    width: 100px;
+}
+/* a태그 색상 및 크기 */
+.aside_area .footer_aside_left a {
+    color: rgba(0, 0, 0, 0.705);
+}
+.footer_inner .aside_area .footer_aside_left a,
+.footer_inner .corp_area a{
+    position: relative; /* 구분자 위치 설정 */
+    margin-right: 10px;
+}
+/* a태그 사이에 구분자 추가 */
+.footer_inner .aside_area .footer_aside_left a:not(:last-child)::after,
+.footer_inner .corp_area a:not(:last-child)::after{
+    content: '|';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0 8px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 어사이드 왼쪽 */
+.aside_area .footer_aside_left div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 어사이드 오른쪽 */
+.aside_area .footer_aside_right {
+    display: inline;
+    float: right;
+}
+/* 어사이드 a링크 */
+.aside_area .footer_aside_right a {
+    display: block;
+    width: fit-content;
+    padding-top: 8px;
+    font-size: 13px;
+}
+/* 오른쪽 서비스항목 */
+.aside_area .footer_aside_right .service, .aside_area .footer_aside_right .service_image, 
+.aside_area .footer_aside_right .service_content{
+    display: inline-block;
+}
+/* 오른쪽 서비스항목 */
+.aside_area .footer_aside_right .service {
+    margin-right: 25px;
+}
+/* 푸터 맨 마지막줄 */
+.footer_inner .corp_area {
+    margin: 20px auto 0px auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* 고객센터에만 구분자 제거 */
+.footer_inner .corp_area a.cust_service::after {
+    content: none;
+}
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */

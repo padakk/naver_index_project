@@ -1,0 +1,12 @@
+/* 위젯 */
+#container .container_inner .container_right .widget {
+    margin-top: 16px;
+    height: 516px;
+    background-color: #8675cc39;
+}
+/* 네이버광고 */
+#container .container_inner .container_right .naver_ad {
+    margin-top: 16px;
+    height: 80px;
+    background-color: #cc9b7539;
+}

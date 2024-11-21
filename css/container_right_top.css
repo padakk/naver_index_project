@@ -1,0 +1,98 @@
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* ======================= 오른쪽 컨테이너 ====================== */
+/* 오른쪽 컨테이너 */
+#container .container_inner .container_right {
+    width: 420px;
+    margin-left: 30px;
+    float: right;
+    position: sticky; /* 스크롤 시 따라오도록 설정 */
+    top: -1308px;        /* 상단에서 멈출 위치 */
+}
+/* 로그인 */
+#container .container_inner .container_right .naver_account {
+    height: 124.3px;
+    background-color: #fff;
+    text-align: center;
+    padding: 21px 20px 18px 20px;
+}
+/* 로그인 안내문구 */
+#container .container_inner .container_right .naver_account p {
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    font-weight: 400;
+}
+/* 로그인 버튼 */
+#container .container_inner .container_right .naver_account .btn_login {
+    display: block;
+    padding: 17px 0;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    background-color: #03c75a;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+    box-shadow: 0 2px 4px 0 rgba(3, 199, 90, .12);
+    text-decoration: none;
+    font-size: 14.5px;
+    color: #fff;
+}
+/* 로그인 버튼 안에 로고 */
+#container .container_inner .container_right .naver_account .naver_account_logo {
+    background-image: url('../images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: 0px -301px;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 14px;
+    display: inline-block;
+    margin: 3px 8px 0 0;
+    vertical-align: top;
+}
+/* 아이디찾기, 비밀번호 찾기, 회원가입 */
+#container .container_inner .container_right .naver_account .naver_account_more {
+    margin-top: 15px;
+}
+/* 아이디찾기, 비밀번호 찾기, 회원가입 */
+#container .container_inner .container_right .naver_account .naver_account_more .account_more_item {
+    font-size: 13.3px;
+    font-weight: 300;
+    position: relative;
+    margin-right: 18px;
+}
+/* 회원가입 */
+#container .container_inner .container_right .naver_account .naver_account_more .signup {
+    margin-right: 0;
+}
+/* a태그 사이에 구분자 추가 */
+.container_inner .container_right .naver_account .naver_account_more a:not(:last-child)::after{
+    content: '|';
+    color: rgba(177, 177, 177, 0.289);
+    margin: 0 2px;
+    font-weight: normal;
+    display: inline-block;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 링크에 밑줄 효과(div) */
+#container .container_inner .container_right .naver_account .naver_account_more .account_more_item:hover {
+    border-bottom: 1.4px solid black;
+}
+/* 메인광고 */
+#container .container_inner .container_right .right_main_ad {
+    margin-top: 16px;
+    height: 244px;
+    background-color: #03c75b4b;
+}
+/* 서브광고 */
+#container .container_inner .container_right .right_sub_ad {
+    margin-top: 16px;
+    height: 80px;
+    background-color: #5b879532;
+}
+/* 슬라이드 광고 */
+#container .container_inner .container_right .right_slide_ad {
+    margin-top: 16px;
+    height: 136px;
+    background-color: #955b5d32;
+}

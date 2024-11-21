@@ -1,0 +1,18 @@
+/* 날씨 */
+#container .container_inner .container_right .weather {
+    margin-top: 16px;
+    height: 235.6px;
+    background-color: #b9cc7539;
+}
+/* 증시 */
+#container .container_inner .container_right .stock {
+    margin-top: 16px;
+    height: 235.6px;
+    background-color: #75b3cc39;
+}
+/* 서브광고2 */
+#container .container_inner .container_right .right_sub_ad_2 {
+    margin-top: 16px;
+    height: 240px;
+    background-color: #75cc9f39;
+}
