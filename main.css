@@ -5,13 +5,16 @@ body {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 �
 input {font-family:-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;}
 button{border:0; background-color:transparent;}
 button:hover {cursor:pointer;}
+/* 커서 가져다댔을 때 나오는 툴팁(말풍선) */
+.tooltip {
+    display: none;
+}
 
 #wrap {
     min-width: 1340px;
 }
 
 #header {
-    background-color: rgba(255, 255, 0, 0.236);
     width: 1280px;
     height: 220px;
     margin: 0 auto;
@@ -439,7 +442,6 @@ button:hover {cursor:pointer;}
     margin-top: 16px;
     height: 425.6px;
     background-color: rgba(160, 175, 237, 0.066);
-    padding: 16px;
 }
 /* a태그 사이에 구분자 추가 */
 .container_inner .container_left .news .news_header a:not(:last-child)::after{
@@ -453,11 +455,16 @@ button:hover {cursor:pointer;}
     top: 50%;
     transform: translateY(-50%);
 }
+/* 뉴스 헤더 */
+.container_inner .container_left .news .news_header {
+    padding: 18px 20px 17px;
+}
 /* 뉴스 타이틀 */
 .container_inner .container_left .news .news_header .news_header_title {
     position: relative; /* 구분자 위치 설정 */
     margin-right: 20px;
     font-weight: bold;
+    color:rgba(128, 128, 128, 0.831)
 }
 /* 뉴스스탠드에만 구분자 변경 */
 .container_inner .container_left .news .news_header a.news_stand::after {
@@ -465,10 +472,69 @@ button:hover {cursor:pointer;}
     font-weight: bold;
     font-size: 26px;
 }
-/* 링크 밑줄효과(div) */
-.container_inner .container_left .news .news_header a:hover {
+/* 뉴스 헤더 밑줄효과 */
+.container_inner .container_left .news .news_header_title:hover {
     border-bottom: 1.4px solid black;
 }
+/* 헤더에 스포츠 버튼 라이브 폰트 */
+.container_inner .container_left .news .news_header .font_live {
+    background-color: #f4361e;
+    /* background-color: var(--color_live_news_price); */
+    display: inline-block;
+    margin: 3px 0 0 5px;
+    padding: 0 5px 0 4px;
+    border-radius: 9px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 900;
+    vertical-align: top;
+    color: #fff;
+}
+/* 헤더에 스포츠 버튼 라이브 아이콘 */
+.container_inner .container_left .news .news_header .icon_live {
+    content: "";
+    display: inline-block;
+    background-image: url('images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -358px -301px;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 10px;
+    margin: 4px 3px 0 0;
+    vertical-align: top;
+}
+.container_inner .container_left .news .news_header .sports_live {
+    margin-left: -26px;
+}
+/* 스포츠 뒤에 오는 구분자만 오른쪽으로 밀기 */
+#container .container_inner .container_left .news .news_header .sports::after {
+    right: -64px;
+}
+/* 뉴스 서브헤더 */
+.container_inner .container_left .news .news_item .news_sub_header {
+    background-color: #f5f7f8;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    margin: 0 20px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.container_inner .container_left .news .news_item .news_sub_header .img_arrow {
+    background-image: url('images/sp_main.b27083b1.png');
+    background-size: 463px 440px;
+    background-position: -242px -184px;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 6px;
+    display: inline-block;
+    margin: 10px 0 0 5px;
+    vertical-align: top;
+}
+
 /* 쇼핑 */
 #container .container_inner .container_left .container_shopping {
     margin-top: 16px;
@@ -546,7 +612,7 @@ button:hover {cursor:pointer;}
 }
 /* 아이디찾기, 비밀번호 찾기, 회원가입 */
 #container .container_inner .container_right .naver_account .naver_account_more {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 /* 아이디찾기, 비밀번호 찾기, 회원가입 */
 #container .container_inner .container_right .naver_account .naver_account_more .account_more_item {
@@ -554,6 +620,10 @@ button:hover {cursor:pointer;}
     font-weight: 300;
     position: relative;
     margin-right: 18px;
+}
+/* 회원가입 */
+#container .container_inner .container_right .naver_account .naver_account_more .signup {
+    margin-right: 0;
 }
 /* a태그 사이에 구분자 추가 */
 .container_inner .container_right .naver_account .naver_account_more a:not(:last-child)::after{
@@ -646,7 +716,7 @@ button:hover {cursor:pointer;}
 .footer_inner .banner_area .footer_banner {
     width: 410px;
     height: 100px;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.132);
 }
 /* 공지사항, 어사이드 */
 .footer_inner .notice_area,
