@@ -158,13 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
         items_all += titleAndLiItems.li_items[i];
     }
 
-    // ul
-    let itemList = document.querySelector('.recoShoppingView_item_list');
-    // ul의 width 설정: 100% 나누기 li 개수 * 3 (3개씩 출력) 
-    let ulWidth = 100 / titleAndLiItems.li_items.length * 3;
-    //스타일적용
-    itemList.style.width = `${ulWidth}%`;
-    
     document.getElementById('slide_ad_title').innerHTML = titleAndLiItems.title;
     document.getElementById('recoShoppingView_item_list').innerHTML = items_all;
 });
