@@ -11,11 +11,97 @@
     border-bottom: 1px solid #ebebeb;
 }
 /* 푸터 배너 */
-.footer_inner .banner_area .footer_banner {
+.footer_inner .banner_area .footer_banner_wrap {
     width: 410px;
     height: 100px;
-    background-color: rgba(0, 255, 255, 0.132);
 }
+/* 푸터 배너 a태그 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* 푸터배너에 밑줄효과 제거 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner:hover {
+    border-bottom: none;
+}
+/* 푸터배너 이미지 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_image {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    width: 160px;
+    height: 100px;
+    display: inline-block;
+}
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_image .thumb_img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+/* 푸터배너 ad 로고 */
+.icon_nad {
+    display: block;
+    width: 25px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width='25'%20height='16'%20viewBox='0%200%2025%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3E%3Crect%20width='25'%20height='16'%20rx='3'%20fill='white'%20fill-opacity='0.7'/%3E%3Crect%20x='0.5'%20y='0.5'%20width='24'%20height='15'%20rx='2.5'%20stroke='black'%20stroke-opacity='0.12'/%3E%3Cpath%20d='M7.89097%204.146H9.35397L12.379%2012H10.905L10.168%209.921H7.03297L6.29597%2012H4.87697L7.89097%204.146ZM7.40697%208.876H9.80497L8.62797%205.499H8.59497L7.40697%208.876ZM12.9436%204.146H16.1996C16.8009%204.146%2017.3216%204.24867%2017.7616%204.454C18.2016%204.65933%2018.5609%204.94167%2018.8396%205.301C19.1182%205.653%2019.3236%206.06733%2019.4556%206.544C19.5949%207.02067%2019.6646%207.53033%2019.6646%208.073C19.6646%208.61567%2019.5949%209.12533%2019.4556%209.602C19.3236%2010.0787%2019.1182%2010.4967%2018.8396%2010.856C18.5609%2011.208%2018.2016%2011.4867%2017.7616%2011.692C17.3216%2011.8973%2016.8009%2012%2016.1996%2012H12.9436V4.146ZM14.3186%2010.878H15.6716C16.2069%2010.878%2016.6432%2010.8083%2016.9806%2010.669C17.3252%2010.5223%2017.5929%2010.3243%2017.7836%2010.075C17.9816%209.81833%2018.1136%209.52133%2018.1796%209.184C18.2529%208.83933%2018.2896%208.469%2018.2896%208.073C18.2896%207.677%2018.2529%207.31033%2018.1796%206.973C18.1136%206.62833%2017.9816%206.33133%2017.7836%206.082C17.5929%205.82533%2017.3252%205.62733%2016.9806%205.488C16.6432%205.34133%2016.2069%205.268%2015.6716%205.268H14.3186V10.878Z'%20fill='%235D5D5D'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    color: transparent;
+    position: absolute;
+    top: 4px;
+    left: 132px;
+}
+
+/* 푸터배너 제목과 내용 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content {
+    width: 229px;
+    height: 95px;
+    padding: 5px 3px 0 18px;
+}
+/* 푸터배너 서브타이틀 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content .footer_banner_subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: #fff;
+    background-color: #a0adb2;
+    vertical-align: top;
+}
+/* 푸터배너 메인타이틀 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content .footer_banner_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: -0.7px;
+    color: #222122;
+}
+/* 푸터배너 내용 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content .footer_banner_con1,
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content .footer_banner_con2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.7px;
+    color: #545454;
+}
+.footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_content .footer_banner_con1 {
+    margin-top: 6px;
+}
+
 /* 공지사항, 어사이드 */
 .footer_inner .notice_area,
 .footer_inner .aside_area {

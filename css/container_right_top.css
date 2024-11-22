@@ -12,7 +12,7 @@
     margin-left: 30px;
     float: right;
     position: sticky; /* 스크롤 시 따라오도록 설정 */
-    top: -1308px;        /* 상단에서 멈출 위치 */
+    top: -1358px;      /* 상단에서 멈출 위치 */
 }
 /* 로그인 */
 #container .container_inner .container_right .naver_account {
@@ -144,6 +144,10 @@
     top: 44px;
     left: -20px;
 }
+/* ad로고 밑줄효과 */
+.reco_shopping_view_tag_ad:hover {
+    text-decoration: underline;
+}
 /* 슬라이드 광고 아이템 리스트 ul */
 .recoShoppingView_item_list {
     display: flex;;
@@ -189,11 +193,13 @@
     top: 590px;
     left: 104px;
     z-index: 3;
+    width: 31px;
 }
 /* 슬라이드 오른쪽 버튼 */
 .btn_slide .btn_slide_right {
     position: relative;
-    left: 237px;
+    left: 275px;
+    top: -32px;
 }
 /* 슬라이드 버튼 */
 .reco_shopping_view_shopping_group .reco_shopping_view_shopping_inner .btn_slide .btn_slide_left,
