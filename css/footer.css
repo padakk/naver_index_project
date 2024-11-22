@@ -22,6 +22,18 @@
     height: 100%;
     position: relative;
 }
+/* 배너이미지 확대효과 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner:hover .thumb_img {
+    transform: scale(1.05);
+}
+.thumb_img {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+}
+/* 배너 메인타이틀에 밑줄효과 */
+.footer_inner .banner_area .footer_banner_wrap .footer_banner:hover .footer_banner_title {
+    text-decoration: underline;
+}
 /* 푸터배너에 밑줄효과 제거 */
 .footer_inner .banner_area .footer_banner_wrap .footer_banner:hover {
     border-bottom: none;
@@ -33,6 +45,7 @@
     width: 160px;
     height: 100px;
     display: inline-block;
+    overflow: hidden;
 }
 .footer_inner .banner_area .footer_banner_wrap .footer_banner .footer_banner_image .thumb_img {
     object-fit: cover;
@@ -133,6 +146,9 @@
 .aside_area .footer_aside_left a {
     color: rgba(0, 0, 0, 0.705);
 }
+.aside_area .footer_aside_right .service_image:hover {
+    border-bottom: none;
+}
 .footer_inner .aside_area .footer_aside_left a,
 .footer_inner .corp_area a{
     position: relative; /* 구분자 위치 설정 */
@@ -160,6 +176,8 @@
 .aside_area .footer_aside_right {
     display: inline;
     float: right;
+    top: -10px;
+    position: relative;
 }
 /* 어사이드 a링크 */
 .aside_area .footer_aside_right a {
@@ -176,6 +194,12 @@
 /* 오른쪽 서비스항목 */
 .aside_area .footer_aside_right .service {
     margin-right: 25px;
+}
+/* 서비스항목 이미지 위치조정 */
+.service .service_image {
+    position: relative;
+    top: 6px;
+    left: 10px;
 }
 /* 푸터 맨 마지막줄 */
 .footer_inner .corp_area {
