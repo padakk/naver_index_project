@@ -161,3 +161,46 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('slide_ad_title').innerHTML = titleAndLiItems.title;
     document.getElementById('recoShoppingView_item_list').innerHTML = items_all;
 });
+/** 슬라이드 광고 버튼눌렀을 때 움직임 구현
+ * 
+ */
+document.addEventListener("DOMContentLoaded", () => {
+    const slideContainer = document.getElementById("recoShoppingView_item_list");
+    const leftButton = document.getElementById("btn_slide_left");
+    const rightButton = document.getElementById("btn_slide_right");
+
+    let currentIndex = 0; // 현재 슬라이드 인덱스
+    const itemWidth = 96.333; // 아이템 가로 크기 (여백 포함)
+    const itemsToShow = 3; // 한 번에 보여질 아이템 수 (개수 당 인덱스 1)
+    const slideItems = slideContainer.children; // 슬라이드 아이템들
+    const totalItems = slideItems.length; // 총 아이템 수
+
+    /** 슬라이드 이동 함수
+     *  @param {*} index 
+     */ 
+    function slideTo(index) {
+        const maxIndex = Math.ceil(totalItems / itemsToShow) - 1; // 최대 인덱스 계산
+
+        // 끝에 도달했을 때 순환 처리
+        if (index < 0) {
+            currentIndex = maxIndex; // 왼쪽 끝에서 오른쪽 끝으로
+        } else if (index > maxIndex) {
+            currentIndex = 0; // 오른쪽 끝에서 왼쪽 끝으로
+        } else {
+            currentIndex = index; // 정상 이동
+        }
+
+        const offset = -currentIndex * itemsToShow * itemWidth; // 이동 거리 계산
+        slideContainer.style.transform = `translateX(${offset}px)`; // 슬라이드 이동
+    }
+
+    // 왼쪽 버튼 클릭(인덱스 -1)
+    leftButton.addEventListener("click", () => {
+        slideTo(currentIndex - 1);
+    });
+
+    // 오른쪽 버튼 클릭(인덱스 +1)
+    rightButton.addEventListener("click", () => {
+        slideTo(currentIndex + 1);
+    });
+});
