@@ -113,6 +113,19 @@
     overflow: hidden;
     background-color: #f9fbfd;
 }
+/* 슬라이드 광고 이미지 */
+.recoShoppingView_img__udoPB {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1);
+}
+/* 슬라이드 광고 이미지 확대 축소효과 */
+.recoShoppingView_item__R5HaM:hover .recoShoppingView_img__udoPB {
+    transform: scale(1.05);
+}
+/* 슬라이드 광고 밑줄 효과 */
+.recoShoppingView_title__v7bm2:hover {
+    text-decoration: underline;
+}
 /* 슬라이드 광고 헤더 */
 .container_right .right_slide_ad .reco_shopping_view_header {
     flex-shrink: 0;
@@ -182,10 +195,24 @@
     border: 1px solid #b4b4b457;
     overflow: hidden;
     height: 90px;
+    text-align: center;
 }
-/* 슬라이드 광고 가격 안보이게 */
+/* 슬라이드 광고 가격 (기본:안보임) */
 .recoShoppingView_price__Pae5j {
+    position: relative;
+    z-index: 2;
+    top: -29px;
+    background-color: rgba(103, 102, 102, 0.619);
+    color: #fff;
     display: none;
+    width: 90px;
+    font-weight: 900;
+    font-size: 13px;
+    padding: 4px 0 4px 0;
+}
+/* 슬라이드 광고 가격 보이게 */
+.recoShoppingView_item__R5HaM:hover .recoShoppingView_price__Pae5j {
+    display: inline-block;
 }
 /* 슬라이드 버튼 */
 .btn_slide {
