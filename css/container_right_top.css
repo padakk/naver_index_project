@@ -1,3 +1,4 @@
+/* 슬라이드 광고 헤더폰트 */
 @import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquareNeo/nanumsquareneo.css');
 
 /* 컨테이너 박스들 테두리 */
@@ -7,12 +8,12 @@
 }
 
 /* 오른쪽 컨테이너 */
-#container .container_inner .container_right {
+#container .container_inner #container_right {
     width: 420px;
     margin-left: 30px;
     float: right;
     position: sticky; /* 스크롤 시 따라오도록 설정 */
-    top: -1358px;      /* 상단에서 멈출 위치 */
+    top: -1358px;
 }
 /* 로그인 */
 #container .container_inner .container_right .naver_account {
@@ -201,14 +202,18 @@
 .recoShoppingView_price__Pae5j {
     position: relative;
     z-index: 2;
-    top: -29px;
+    top: -28px;
     background-color: rgba(103, 102, 102, 0.619);
     color: #fff;
     display: none;
     width: 90px;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 12.5px;
     padding: 4px 0 4px 0;
+}
+/* 슬라이드 가격 (원 글씨) */
+.recoShoppingView_price__Pae5j .recoShoppingView_txt___gOUv {
+    font-weight: 500;
 }
 /* 슬라이드 광고 가격 보이게 */
 .recoShoppingView_item__R5HaM:hover .recoShoppingView_price__Pae5j {
