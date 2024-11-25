@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `<a href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcstockbottom&amp;campaign_id=2411-shopping-012&amp;material=C&amp;target=https%3A%2F%2Fmkt.naver.com%2Fopenrun06%3Fa%3Dcoupon%26dtm_detail%3DC%26dtm_source%3Dnaver_pcstockbottom%26dtm_medium%3Dmktatrb%26dtm_campaign%3D2411-shopping-012" class="Layout-module__banner_area___CUXNe" target="_blank"><img src="https://s.pstatic.net/static/www/mobile/edit/20241115_1095/upload_1731656649928VPOK0.jpg" width="420" height="80" alt="네이버 오픈런 온라인에서 가장 빠르게 만나는 신"></a>`
         ,
         `<a href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcstockbottom&amp;campaign_id=2410-shopping-003&amp;material=kv_photo_2&amp;target=https%3A%2F%2Fshopping.naver.com%2Fns%2Fhome%3Fdtm_detail%3Dkv_photo_2%26dtm_source%3Dnaver_pcstockbottom%26dtm_medium%3Dmktatrb%26dtm_campaign%3D2410-shopping-003" class="Layout-module__banner_area___CUXNe" target="_blank"><img src="https://s.pstatic.net/static/www/mobile/edit/20241115_1095/upload_1731666483398cyalt.png" width="420" height="80" alt="깎고 받고 쌓고 샘이 다른 쇼핑 네이버플러스 스토어"></a>`
+        ,
+        `<a href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcstockbottom&amp;campaign_id=2410-shopping-003&amp;material=kv_black_4&amp;target=https%3A%2F%2Fshopping.naver.com%2Fns%2Fhome%3Fdtm_detail%3Dkv_black_4%26dtm_source%3Dnaver_pcstockbottom%26dtm_medium%3Dmktatrb%26dtm_campaign%3D2410-shopping-003" class="Layout-module__banner_area___CUXNe" target="_blank"><img src="https://s.pstatic.net/static/www/mobile/edit/20241122_1095/upload_17322663032543n7sh.png" width="420" height="80" alt="가격 깎고 구폰 받고 적립 쌓는 네이버플러스 스토어"></a>`
         // 광고 이곳에 추가하면 됨
     ];
 

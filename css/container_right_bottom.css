@@ -7,6 +7,43 @@
 /* 네이버광고 */
 #container .container_inner .container_right .naver_ad {
     margin-top: 16px;
-    height: 80px;
-    background-color: #cc9b7539;
+    height: 64px;
+    padding: 8px 50px 8px 18px;
+}
+/* 네이버광고 박스 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap {
+    padding: 11px 0;
+    height: 42px;
+}
+/* 네이버광고 밑줄효과 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap .naver_ad_link:hover .naver_ad_contents {
+    text-decoration: underline;
+} 
+/* 네이버광고 이미지 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap .naver_ad_image {
+    margin-right: 12px;
+}
+/* 네이버광고 설명 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap .naver_ad_contents {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 14.5px;
+    line-height: 20px;
+}
+/* 네이버광고 제목 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap .naver_ad_contents .naver_ad_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #101010;
+    font-weight: bold;
+}
+/* 네이버광고 내용 */
+#container .container_inner .container_right .naver_ad .naver_ad_wrap .naver_ad_contents .naver_ad_description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #606060;
+    margin-top: 2px;
+    font-weight: 400;
 }
